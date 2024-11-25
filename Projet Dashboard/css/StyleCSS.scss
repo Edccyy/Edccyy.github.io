@@ -1,0 +1,35 @@
+ /*-- scss:defaults --*/
+
+$navbar-bg: #829F6E !default;
+$navbar-fg: #ffffff !default;
+
+$danger: #FFFBBE !default;
+$primary:#4B6285 !default;
+
+
+/*-- scss:rules --*/
+body {
+  background-color: #CBD7A6; /* Couleur de fond douce */
+ }
+
+ .nav-link {
+  color: #ffffff;
+}
+
+.card-header {
+  background-color: #949F61;
+}
+
+.nav-item > a:hover {
+  color: #000000;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+
+
+.value-box {
+  text-align: center;
+}
