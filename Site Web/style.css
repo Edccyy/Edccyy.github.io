@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*Home_____________________________________________________________________________________________________________________________________________*/
+
+#home {
+    position: relative;
+    top: -1vh;
+    height: 100vh;
+    width: 100vw;
+    background: url(./Images/home1.jpg) no-repeat;
+    background-size:cover;
+}
+
+#home .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+}
+
+.logo {
+    position: absolute;
+    top : 0;
+    left: 0;
+    margin-left: 4vw;
+    margin-top: 0vh;
+    scale: 0.35;
+}
+
+#bouton {
+    position: absolute;
+    top: 4vh;
+    right: 10%;
+    margin-right: 1vw;
+    color: white;
+    font-size: 0.9em;
+    font-family: 'Roboto Slab', serif;
+}
+
+#bouton a {
+    text-decoration: none;
+    color: white;
+    padding: 1vw;
+}
+
+#home .H{
+    position: relative;
+    text-align: center;
+    color: #333;
+    font-size: 2.1em;
+}
+
+#home .H h1 {
+    position: absolute;
+    top: 6vh;
+    left: 15vw;
+    color: white;
+    opacity: 0.2;
+    font-size: 11em;
+    font-family: "Roboto Slab", serif;
+}
+
+#home .Hello{
+    position: relative;
+    text-align: center;
+    margin-top: 1vh;
+    top : 32vh;
+    left : -19.2vw;
+    color: white;
+    opacity: 0.9;
+    font-size: 4em;
+    font-family: "Roboto Slab", serif;
+    font-weight: 0;
+}
+
+#home .Texte p{
+    position : absolute;
+    top : 53vh;
+    left : 18vw;
+    color: white;
+    font-size: 0.85em;
+    font-family: "Roboto Slab", sans-serif;
+    text-align: justify;
+}
+/*About__________________________________________________________________________________________________________________________________*/
+
+#about .Container {
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+about .Images {
+    position: relative;
+    width: 45%;
+    height: 100vh;
+}
+
+#about .I{
+    position: relative;
+    width: 40%;
+    border: #c1b086 solid 0.5vh;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.836);
+}
+
+#about .A1 {
+    width: 20%;
+    height: 65vh;
+    top: 15vh;
+    left: 10vw;
+    z-index: 1;
+    transition: all 1s;
+}
+
+.A1:hover {
+    transform: scale(1.2);
+
+}
+
+#about .A2 {
+    
+    width: 20%;
+    height: 40%;
+    top:20vh;
+    z-index: 2;
+    transition: all 1s;
+}
+
+#about .A2:hover {
+    transform: scale(1.2);
+}
+
+#about .Texte {
+    font-family: "Roboto Slab", serif;
+    position: relative;
+    top: -50vh;
+    left: 50vw;
+    width: 55%;
+    height: 100%;
+    padding-left: 50px;
+}
+
+#about .Texte .trait {
+    width: 6vw;
+    height: 0.5vh;
+    background-color: #c1b086;
+    margin-bottom: 5vh;
+}
+#about .Texte p .RAISING {
+    margin-top: 5vh;
+    font-family: "Roboto Slab", serif;
+    hyphens: auto;
+    font-size: 2vh;
+    color: #666;
+    margin-bottom: 5vh; ;
+}
+
+#about .Texte span {
+    font-size: 4vh;
+    margin: 10px 0;
+    margin-bottom: 2vh;
+    hyphens: auto;
+}
+
+#about .Texte .Lorem {
+    margin-left: 3vw;
+    margin-top: 4vh;
+    color: #666;
+    line-height: 1;
+    font-size: 1.5vh;
+    line-height: 2.5vh;
+    font-weight: 400;
+    text-align: justify;
+}
+
+#about .Texte .Lorem2 {
+    margin-left: 3vw;
+    margin-top: 4vh;
+    color: #666;
+    line-height: 1;
+    font-size: 1.5vh;
+    line-height: 2.5vh;
+    text-align: justify;
+    margin-bottom: 10vh;
+}
+#about .Texte a {
+    margin-left : 3vw;
+    background-color: #c1b086;
+    color: white;
+    border: white solid 0.3vh;
+    border-radius: 2px;
+    padding: 10px 20px;
+    border-radius: 2vw;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.836);
+    text-decoration: none;
+}
+
+/*Amenties_____________________________________________________________________________________________________________________________________________*/
+#amenties {
+    display: flex;
+    align-items: flex-start; 
+    height: 100vh;
+    width: 100vw;
+}
+
+#amenties .container{
+    display: flex;
+    height: 100vh;
+    width: 150vw;
+}
+
+#amenties .HAUT{
+    position: relative;
+    padding: 0%;
+    left: -5vw;
+    height: 50vh;
+    width: 110vw;
+    background-image: url(./Images/ami.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 49.2vh;
+    border: #c1b086 solid 0.5vh;
+    border-radius: 15px;
+}
+
+#amenties .Texte{
+    position: relative;
+    padding: 0%;
+    top: -20vh;
+    left: 46vw;
+    height: 50vh;
+    width: 40vw;
+    background-color: #3f9cc163;
+    color: rgba(255, 255, 255, 0.575);
+    border: #c1b08686 solid 0.5vh;
+    border-radius: 15px;
+    font-family: 'Roboto Slab', serif;
+    transition: all 1s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#amenties .Texte:hover{
+    background-color: #3f9cc1;
+    color: white;
+    border: #c1b086 solid 0.5vh;
+    border-radius: 15px;
+    
+}
+
+#amenties .Texte h1{
+    position: relative;
+    font-size: 1.3em;
+    padding-top: 6%;
+    padding-left: 5%;
+    font-weight: 400;
+}
+
+#amenties .Texte .Lorem{
+    position: relative;
+    font-size: 1.6vh;
+    padding-top: 5%;
+    padding-left: 5%;
+    line-height: 2em;
+}
+
+#amenties .Texte .signe{
+    display: grid;
+    padding-left: 5%;
+    padding-top: 5%;
+    position: relative;
+    grid-template-areas: 
+    "Swin Gym Spa"
+    "Boat Surf Conf"
+    "Diving Beach vide";
+    gap: 0.2vh;
+}
+
+
+#amenties .Texte span{
+    padding-right: 5%;
+}
+
+.Swin{
+    position: relative;
+    grid-area: Swin;
+}
+
+.Gym{
+    grid-area: Gym;
+}
+
+.Spa{
+    grid-area: Spa;
+}
+
+.Boat{
+    padding-top: 2vh;
+    grid-area: Boat;
+}
+
+.Surf{
+    padding-top: 2vh;
+    grid-area: Surf;
+}
+
+.Conf{
+    padding-top: 2vh;
+    grid-area: Conf;
+}
+
+.Diving{
+    padding-top: 2vh;
+    grid-area: Diving;
+}
+
+.Beach{
+    padding-top: 2vh;
+    grid-area: Beach;
+}
+
+#amenties a{
+    left: 88.5vw;
+    top: -21vh;
+    position: relative;
+    background-color: #c1b086;
+    color: white;
+    border: white solid 0.4vh;
+    padding: 2vh 2vw;
+    border-radius: 2vw;
+    box-shadow: #00000080 0 0 1vh;
+    text-decoration: none;
+}
+/*Rooms________________________________________________________________________________________________________________________*/
+
+#rooms .container {
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#rooms .Haut {
+    margin-top: 2.5%;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+#rooms .Haut .trait {
+    width: 6vw;
+    height: 0.5vh;
+    background-color: #c1b086;
+}
+
+#rooms .Haut p {
+    display: flex;
+    margin-top: 1.5%;
+    width: 100%;
+    height: 30%;
+    font-size: 0.6em;
+    color: #474747 ;
+    letter-spacing: 0.2em;
+}
+
+#rooms .Haut .ROOMS {
+    display: flex;
+    margin-top: 1%;
+    width: 100%;
+    height: 50%;
+    font-size: 1.5em;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: black;
+}
+
+#rooms .Haut a {
+    top: -7vh;
+    left: 73vw;
+    position: relative;
+    background-color: #c1b086;
+    color: #fff;
+    border: white 2px solid;
+    padding: 2.5vh 3vw ;
+    text-decoration: none;
+    border-radius: 2vw; 
+    box-shadow: #7e7d7dcb 0 1vh 1vh;
+    max-width: 2vw;
+    text-align: center;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+#rooms .Bas {
+    display: flex;
+    height: 65%;
+    width: 80%;
+    font-family: 'Roboto Slab', serif;
+    gap: 5%;
+}
+
+#rooms .Bas .photo1, 
+#rooms .Bas .photo2 , 
+#rooms .Bas .photo3 {
+    padding: auto;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    border: #c1b086 0.5vh solid;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+#rooms .Bas img{
+    display: flex;
+    height: 100%;
+    object-fit: cover;
+}
+
+#rooms .Bas p {
+    display: flex;
+    padding-left: 5%;
+}
+
+/*Restaurant___________________________________________________________________________________________________________________*/
+
+#restaurant .container {
+    display: flex;
+    height: 100vh;
+    width: 95%;
+    gap: 2vh;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#restaurant .Re{
+    display: flex;
+    flex: 1 1 33%;
+    width: 33%;
+    height: 100%;
+    border: #c1b086 solid 0.5vh;
+    border-radius: 5%;
+    box-shadow: #000000 0 5px 20px;
+    overflow: hidden;
+}
+
+#restaurant .Re img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#restaurant .Er {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 66%;
+}
+
+#restaurant .Texte {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+}
+
+#restaurant .titre::before {
+    content: "";
+    font-size: 0.4vh;
+    display: block;
+    width: 6vw;
+    height: 0.4vh;
+    background-color: #c1b086;
+    position: relative;
+    top:-40%;
+}
+
+#restaurant .titre {
+    padding-top: 3vh;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+#restaurant .Lorem {
+    padding-top: 3vh;
+    padding-left: 2vw;
+    font-size: 1.7vh;
+    color: #666;
+    line-height: 2.8vh;
+}
+
+#restaurant a {
+    position: relative;
+    top: -7vh;
+    left: 45.5vw;
+    max-width: 7vw;
+    padding: 2vh 2vw ;
+    font-size: 0.8em;
+    background-color: #c1b086;
+    color: white;
+    border: white solid 0.3vh;
+    border-radius: 5vh;
+    box-shadow: #000000 0 5px 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#restaurant .Repas {
+    display: flex;
+    height: 76.11%;
+    width: 100%;
+    flex-direction: column;
+    gap: 5%;
+}
+
+
+#restaurant .Haut, .Bas {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    gap: 2vh;
+    box-sizing: border-box;
+}
+
+#restaurant .Fr, .Me, .It, .De {
+    flex: 1 1 auto;
+    display: flex;
+    border: #c1b086 solid 0.5vh;
+    padding: 0%;
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: #000000 0 5px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#restaurant .Fr img,  .Me img,  .It img,  .De img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#restaurant .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;   
+}
+
+#restaurant .overlay .country{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    left: 0%;
+    height: 15%;
+    bottom: -110%;
+    transition: all 1s ease;
+    background-color: #c1b086ad;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+    }
+
+#restaurant .overlay .Lispum {
+    position: absolute;
+    display: flex;
+    width: 90%;
+    top: -120%;
+    left: 5%;
+    transition: all 1s ;
+    background-color: #c1b086ad ;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    font-family: 'Roboto Slab', serif;
+    padding: 1%;
+    border-radius: 2vh;
+
+    }
+    
+#restaurant .Fr:hover .country, 
+#restaurant .Me:hover .country, 
+#restaurant .It:hover .country,
+#restaurant .De:hover .country {
+    bottom: 70%;
+    z-index: 5;
+}
+
+#restaurant .Fr:hover .Lispum, 
+#restaurant .Me:hover .Lispum, 
+#restaurant .It:hover .Lispum, 
+#restaurant .De:hover .Lispum {
+    top : 50%;
+    z-index: 4;
+}
+
+/*Gallery_____________________________________________________________________________________________________________________________*/
+
+#gallery .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+#gallery .Haut {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0%;
+    padding-top: 1.5%;
+}
+
+#gallery .Haut .trait {
+    width: 6vw;
+    height: 0.2vw;
+    background-color: #c1b086;
+}
+
+#gallery .Haut .Welcome {
+    margin-top: 1.5%;
+    padding-top: 1%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    color: #666;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+
+}
+
+#gallery .Haut .Titre {
+    padding-top: 0.5%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+}
+
+#gallery a {
+    position: relative;
+    left: 62.5%;
+    bottom : 50%;  
+    padding: 4vh 4vw ;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width:7.5vw;
+    max-height: 2vh;
+    background-color: #c1b086;
+    color: white;
+    border: white solid 0.3vh;
+    border-radius: 5vh;
+    box-shadow: #000000 0 5px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery .Bas {
+    position: relative;
+    display: flex;
+    gap:0%;
+    
+}
+
+#gallery .photo1,
+#gallery .photo2,
+#gallery .photo3,
+#gallery .photo4,
+#gallery .photo5,
+#gallery .photo6,
+#gallery .photo7,
+#gallery .photo8{
+    position: relative;
+    border: #c1b086 solid 0.3vw;
+    width: 3%;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 5vh;
+    transition: all 1s;
+    opacity: 0.5;
+}
+
+#gallery .photo1{
+    width: 55%;
+    opacity: 1;
+}
+
+#gallery .photo1 img,
+#gallery .photo2 img,
+#gallery .photo3 img,
+#gallery .photo4 img,
+#gallery .photo5 img,
+#gallery .photo6 img,
+#gallery .photo7 img,
+#gallery .photo8 img{
+    object-fit: cover;
+    height: 120%;
+}
+
+
+
+#action1:checked ~ label.photo1,
+#action2:checked ~ label.photo2,
+#action3:checked ~ label.photo3,
+#action4:checked ~ label.photo4,
+#action5:checked ~ label.photo5,
+#action6:checked ~ label.photo6,
+#action7:checked ~ label.photo7,
+#action8:checked ~ label.photo8 {
+    width: 55%;
+    opacity: 1;
+}
+
+#action1:checked ~ label:not(.photo1),
+#action2:checked ~ label:not(.photo2),
+#action3:checked ~ label:not(.photo3),
+#action4:checked ~ label:not(.photo4),
+#action5:checked ~ label:not(.photo5),
+#action6:checked ~ label:not(.photo6),
+#action7:checked ~ label:not(.photo7),
+#action8:checked ~ label:not(.photo8) {
+    width: 3%;
+    opacity: 0.5;
+}
