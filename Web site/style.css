@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: url('images/background.jpg') no-repeat fixed;
+}
+
+#Experiences a,
+#Cursus a,
+#Projets a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+
+#Experiences a:hover,
+#Cursus a:hover,
+#Projets a:hover {
+    color: green;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-shadow: #c6c6c6 0px 0px 10px;
+}
+/*Home__________________________________________________________________________________________________________________________________*/
+
+#home {
+    height: 100vh;
+    width: 100%;
+    background: #000000dd;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    gap: 15vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr;
+    align-items: stretch;
+}
+
+.header {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background: #000;
+    box-shadow: green 0px 0px 10px;
+}
+
+.logo {
+    top: 2vh;
+    position: relative;
+    margin-left: 3%;
+    align-items: center;
+}
+
+.logo p {
+    color: #ccc8c8;
+    font-size: 4vh;
+}
+
+#bouton {
+    position: absolute;
+    top: 3vh;
+    right: 5%;
+    margin-right: 0vw;
+    color: white;
+    font-size: 2.5vh;
+    font-family: 'Roboto Slab', serif;
+}
+#bouton a {
+    text-decoration: none;
+    color: #ccc8c8;
+    padding: 2vw;
+}
+#bouton a:hover {
+    color: green;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-shadow: #c6c6c6 0px 0px 10px;
+}
+
+.HomeContainer{
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 1fr;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.Photo img{
+    margin-left: 5vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 70%;
+    height: 80%;
+    object-fit: cover;
+    display: block;
+}
+
+.HomeContainer .Presentation{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.Title{
+    display: flex;
+    justify-content: left;
+    font-size: 5vh;
+    font-weight: 700;
+    color: #ccc8c8;
+}
+.Nom{
+    display: flex;
+    justify-content: left;
+    font-size: 12vh;
+    font-weight: 500;
+    color: #ccc8c8;
+    padding-bottom: 0%;
+    margin-top: -9vh;
+}
+.Blabla{
+    display: flex;
+    justify-content: left;
+    font-size: 2vh;
+    font-weight: 300;
+    color: #ccc8c8;
+    padding-top: 0%;
+    margin-top: -9vh;
+}
+.Link{
+    gap: 2vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;    
+    justify-content: left;
+    color: #ccc8c8;
+    font-size: 2.5vh;
+    padding: 0%;
+    margin-top: -5vh;
+}
+.Link a{
+    text-decoration: none;
+    color: #ccc8c8;
+    padding: 0%;
+    font-size: 2.5vh;
+    align-items: center;
+    display: inline-flex;
+}
+.Linkedin{
+    max-height: 5.5vh;
+    padding: 1vh 1.5vw ;
+    background-color: rgb(59, 59, 59);
+    border: #6582cd solid 0.3vh;
+    border-radius: 5vh;
+    box-shadow: #6582cd 0px 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.GitHub{
+    max-height: 5.5vh;
+    padding: 1vh 1.5vw ;
+    background-color: rgb(59, 59, 59);
+    border: green solid 0.3vh;
+    border-radius: 5vh;
+    box-shadow: green 0px 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.CV{
+    max-height: 5.5vh;
+    padding: 1vh 1.5vw ;
+    background-color: rgb(59, 59, 59);
+    border: grey solid 0.3vh;
+    border-radius: 5vh;
+    box-shadow: grey 0px 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*Projets_______________________________________________________________________________________________________________________________*/
+
+
+#Projets {
+    height: 100vh;
+    width: 100%;
+    background: #000000dd ;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+#Projets .Titre p{
+    display: flex;
+    justify-content: left;
+    font-size: 5vh;
+    font-weight: 700;
+    color: white;
+    margin-left: 5vw;
+}
+
+
+.PR{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    justify-content: center;
+    align-items: stretch;
+    padding: 2vh 5vw;
+    color: aliceblue;
+}
+/*Cursus_______________________________________________________________________________________________________________________________*/
+
+#Cursus {
+    height: 100vh;
+    width: 100%;
+    background: #000000dd;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+#Cursus .Titre p{
+    display: flex;
+    justify-content: left;
+    font-size: 5vh;
+    font-weight: 700;
+    color: white;
+    margin-left: 5vw;
+}
+
+.Cours{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+    justify-content: center;
+    align-items: stretch;
+    padding: 2vh 5vw;
+    color: white;
+}
+
+/*Experience_______________________________________________________________________________________________________________________________*/
+
+#Experiences {
+    height: 100vh;
+    width: 100%;
+    background: #000000dd;
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+#Experiences .Titre p{
+    display: flex;
+    justify-content: left;
+    font-size: 5vh;
+    font-weight: 700;
+    color: white;
+    margin-left: 5vw;
+}
+
+.Exp{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+    justify-content: center;
+    align-items: stretch;
+    padding: 2vh 5vw;
+    color: white;
+}
