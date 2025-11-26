@@ -13,7 +13,7 @@ html, body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    background: url('images/background.jpg') no-repeat fixed;
+    background: url('images/Background.jpg') no-repeat fixed;
 }
 
 #Experiences a,
@@ -21,19 +21,39 @@ html, body {
 #Projets a{
     display: flex;
     text-decoration: none;
-    color: white;
+    color: #ccc8c8;
     margin-left: 5vw;
     margin-top: 2vh;
+    border: #ccc8c8 solid 0.2vh;
+    border-radius: 5vh;
+    max-width: 5vw;
+    max-height: 2.5vw;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 1.5vw ;
+    box-shadow: #ccc8c8 0px 0px 10px;
+    background-color: rgb(59, 59, 59);
 }
 
 #Experiences a:hover,
 #Cursus a:hover,
 #Projets a:hover {
     color: green;
-    border-radius: 5px;
     transition: 0.3s;
-    text-shadow: #c6c6c6 0px 0px 10px;
+    border: green solid 0.2vh;
+    box-shadow: green 0px 0px 10px;
 }
+
+.Titre p{
+    display: flex;
+    justify-content: left;
+    font-size: 5vh;
+    font-weight: 700;
+    color: #ccc8c8;
+    margin-left: 5vw;
+    text-decoration: underline;
+}
+
 /*Home__________________________________________________________________________________________________________________________________*/
 
 #home {
@@ -145,7 +165,7 @@ html, body {
 .Link{
     gap: 2vw;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: 1fr;    
     justify-content: left;
     color: #ccc8c8;
@@ -165,9 +185,9 @@ html, body {
     max-height: 5.5vh;
     padding: 1vh 1.5vw ;
     background-color: rgb(59, 59, 59);
-    border: #6582cd solid 0.3vh;
+    border: #0A66C2 solid 0.3vh;
     border-radius: 5vh;
-    box-shadow: #6582cd 0px 0px 10px;
+    box-shadow: #0A66C2 0px 0px 10px;
     justify-content: center;
     align-items: center;
 }
@@ -175,9 +195,9 @@ html, body {
     max-height: 5.5vh;
     padding: 1vh 1.5vw ;
     background-color: rgb(59, 59, 59);
-    border: green solid 0.3vh;
+    border: rgb(19, 137, 19) solid 0.3vh;
     border-radius: 5vh;
-    box-shadow: green 0px 0px 10px;
+    box-shadow: rgb(19, 137, 19) 0px 0px 10px;
     justify-content: center;
     align-items: center;
 }
@@ -191,11 +211,20 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+.MECEN{
+    max-height: 5.5vh;
+    padding: 1vh 1.5vw ;
+    background-color: rgb(59, 59, 59);
+    border: #3F849B solid 0.3vh;
+    border-radius: 5vh;
+    box-shadow: #3F849B 0px 0px 10px;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
 /*Projets_______________________________________________________________________________________________________________________________*/
-
 
 #Projets {
     height: 100vh;
@@ -211,16 +240,6 @@ html, body {
     align-items: stretch;
 }
 
-#Projets .Titre p{
-    display: flex;
-    justify-content: left;
-    font-size: 5vh;
-    font-weight: 700;
-    color: white;
-    margin-left: 5vw;
-}
-
-
 .PR{
     display: grid;
     gap: 10px;
@@ -230,6 +249,32 @@ html, body {
     align-items: stretch;
     padding: 2vh 5vw;
     color: aliceblue;
+}
+
+.PL3{
+    border: green solid 0.5vh;
+    border-radius: 5vh;
+}
+
+.PM1{
+    border: #6582cd solid 0.5vh;
+    border-radius: 5vh;
+}
+
+.PM2{
+    border: orange solid 0.5vh;
+    border-radius: 5vh;
+}
+
+h1{
+    padding: 2vh 2vw;
+    font-size: 3vh;
+}
+
+#Projets .PR a {
+    max-width: 5vw;
+    max-height: 2.5vw;
+    color: red;
 }
 /*Cursus_______________________________________________________________________________________________________________________________*/
 
@@ -247,15 +292,6 @@ html, body {
     align-items: stretch;
 }
 
-#Cursus .Titre p{
-    display: flex;
-    justify-content: left;
-    font-size: 5vh;
-    font-weight: 700;
-    color: white;
-    margin-left: 5vw;
-}
-
 .Cours{
     display: grid;
     gap: 10px;
@@ -267,6 +303,24 @@ html, body {
     color: white;
 }
 
+.Licence{
+    border: rgb(128, 0, 53) solid 0.5vh;
+    border-radius: 5vh;
+}
+
+.Master{
+    border: orange solid 0.5vh;
+    border-radius: 5vh;
+}
+
+.M1{
+    border: green solid 0.5vh;
+    border-radius: 5vh;
+}
+.M2{
+    border: #6582cd solid 0.5vh;
+    border-radius: 5vh;
+} 
 /*Experience_______________________________________________________________________________________________________________________________*/
 
 #Experiences {
@@ -283,15 +337,6 @@ html, body {
     align-items: stretch;
 }
 
-#Experiences .Titre p{
-    display: flex;
-    justify-content: left;
-    font-size: 5vh;
-    font-weight: 700;
-    color: white;
-    margin-left: 5vw;
-}
-
 .Exp{
     display: grid;
     gap: 10px;
@@ -301,4 +346,14 @@ html, body {
     align-items: stretch;
     padding: 2vh 5vw;
     color: white;
+}
+
+.stage{
+    border: green solid 0.5vh;
+    border-radius: 5vh;
+}
+
+.job{
+    border: #6582cd solid 0.5vh;
+    border-radius: 5vh;
 }
