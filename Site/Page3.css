@@ -428,6 +428,28 @@ section {
     padding-left: 20px;
     border-left: 2px solid var(--p3-cyan);
 }
+.timeline-item-fade-up .year{
+    font-family: var(--font-head);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.timeline-item-fade-up h3{
+    margin-top: -1vh;
+    color: var(--p3-cyan);
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+}
+.timeline-item-fade-up h6{
+    margin-top: -1vh;
+    color: var(--p3-red);
+    font-family: var(--font-head);
+    font-size: 1rem;
+}
+.timeline-item-fade-up p{
+    margin-top: 10px;
+    line-height: 1.5;
+    font-family: var(--font-body);
+}
 
 .exp-grid {
     display: grid;
