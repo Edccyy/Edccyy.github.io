@@ -1,7 +1,8 @@
 ## Présentation
 
-Lien du site me présentant : https://Edccyy.github.io/Site/page3.html\
-\\
+Lien du site me présentant : https://Edccyy.github.io/Site/page3.html
+\
+\
 
 ## Projets
 Vous trouverez dans ce repository certains de mes projets académiques, ceux ci ont étaient effectuer durant mon master.
