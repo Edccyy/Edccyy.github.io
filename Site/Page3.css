@@ -446,6 +446,7 @@ section {
     font-size: 1rem;
 }
 .timeline-item-fade-up p{
+    margin-left: 1vw;
     margin-top: 10px;
     line-height: 1.5;
     font-family: var(--font-body);
@@ -471,3 +472,40 @@ main {
 .Mail:hover{
     color: var(--p3-cyan);
 }
+
+.exp-card-fade-up,
+.exp-card-fade-up-delay-1 {
+    padding-left: 20px;
+    border-left: 2px solid var(--p3-cyan);
+}
+
+.exp-card-fade-up h3,
+.exp-card-fade-up-delay-1 h3 {
+    color: var(--p3-cyan);
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    margin-bottom: 2vh;
+}
+
+.exp-card-fade-up h6,
+.exp-card-fade-up-delay-1 h6 {
+    margin-top: -1vh;
+    color: var(--p3-red);
+    font-family: var(--font-head);
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.exp-card-fade-up-delay-1 .last{
+    margin-bottom: 0px;
+}
+
+.exp-card-fade-up p,
+.exp-card-fade-up-delay-1 p {
+    margin-left: 1vw;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-family: var(--font-body);
+    margin-bottom: 50px;
+}
+
