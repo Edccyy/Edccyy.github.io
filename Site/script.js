@@ -1,63 +1,37 @@
-// 1. GESTION DE LA DATE ET HEURE (Style Persona)
+// 1. Date discrète (en haut à droite)
 function updateDate() {
     const now = new Date();
-    const months = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
-    const days = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];
-
-    document.getElementById('p3-month').innerText = months[now.getMonth()];
-    document.getElementById('p3-day').innerText = now.getDate();
-    document.getElementById('p3-dayname').innerText = days[now.getDay()];
+    const days = ["DIM", "LUN", "MAR", "MER", "JEU", "VEN", "SAM"];
+    const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+    set('p3-dayname', days[now.getDay()]);
+    set('p3-day', String(now.getDate()).padStart(2, '0'));
+    set('p3-month', String(now.getMonth() + 1).padStart(2, '0'));
 }
-setInterval(updateDate, 1000);
 updateDate();
+setInterval(updateDate, 60000);
 
-// 2. ANIMATION AU SCROLL (Intersection Observer)
-const observerOptions = {
-    threshold: 0.1
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+// 2. Apparition au scroll
+const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
         }
     });
-}, observerOptions);
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
 
-document.querySelectorAll('.fade-up, .slide-in').forEach((el) => {
-    observer.observe(el);
-});
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 
-// 3. OPTIONNEL: EFFET DE PARTICULES D'EAU (Background)
-// Simple animation CSS/JS pour créer des bulles bleues qui montent
-function createBubble() {
-    const bubble = document.createElement('div');
-    bubble.style.position = 'fixed';
-    bubble.style.bottom = '-50px';
-    bubble.style.left = Math.random() * 100 + 'vw';
-    bubble.style.width = Math.random() * 20 + 10 + 'px';
-    bubble.style.height = bubble.style.width;
-    bubble.style.background = 'rgba(0, 240, 255, 0.2)';
-    bubble.style.borderRadius = '50%';
-    bubble.style.zIndex = '-1';
-    bubble.style.animation = `floatUp ${Math.random() * 5 + 5}s linear`;
-    
-    document.body.appendChild(bubble);
+// 3. Lien actif dans la navigation
+const sections = [...document.querySelectorAll('section[id]')];
+const navLinks = [...document.querySelectorAll('.nav-item')];
 
-    setTimeout(() => {
-        bubble.remove();
-    }, 10000);
+function syncNav() {
+    let current = sections[0] ? sections[0].id : '';
+    sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - window.innerHeight * 0.45) current = sec.id;
+    });
+    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
 }
-
-// Ajouter l'animation CSS pour les bulles via JS
-const styleSheet = document.createElement("style");
-styleSheet.innerText = `
-    @keyframes floatUp {
-        0% { transform: translateY(0); opacity: 0; }
-        10% { opacity: 0.5; }
-        100% { transform: translateY(-100vh); opacity: 0; }
-    }
-`;
-document.head.appendChild(styleSheet);
-
-setInterval(createBubble, 800);
+window.addEventListener('scroll', syncNav, { passive: true });
+syncNav();
